@@ -1,0 +1,34 @@
+{{> header }}
+
+		{{> page_header }}
+
+		{block:Posts}
+		<article class="post {PostType} {TagsAsClasses}">
+			{block:Date}
+			{block:NewDayDate}<p>{DayOfWeek}, {Month} {DayOfMonth}, {Year}</p>{/block:NewDayDate}
+			{block:SameDayDate}<p>{DayOfWeek}, {Month} {DayOfMonth}, {Year}</p>{/block:SameDayDate}
+			{/block:Date}
+
+			{{> text }}
+			
+			{{> quote }}
+
+			{{> link }}
+
+			{{> audio }}
+
+			{{> photos }}
+
+			{{> video }}
+
+			{{> chat }}
+
+			{{> question}}
+
+			{block:IndexPage}<p><a href="{Permalink}" class="permalink">{lang:Permalink}</a></p>{/block:IndexPage}
+		</article>
+		{/block:Posts}
+
+		{{> pagination }}
+
+{{> footer }}

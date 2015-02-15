@@ -1,0 +1,19 @@
+{block:Answer}
+<main class="question">
+	<img src="{AskerPortraitURL-48}">
+	<div class="asker">{Asker} asked:</div>
+	<div class="asker-question">
+		{Question}
+	</div>
+</section>
+{block:Answerer}
+<section class="answerer">
+	<img src="{AnswererPortraitURL-48}">
+	<p>{Answerer} answered:</p>
+	<div class="answerer-answer">
+		{Answer}
+	</div>
+</section>
+{/block:Answerer}
+<div class="replies">{Replies}</div>
+{/block:Answer}

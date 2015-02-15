@@ -1,0 +1,11 @@
+{block:Chat}
+{block:Title}<h2>{Title}</h2>{/block:Title}
+<ul class="conversation">
+	{block:Lines}
+	<li class="line {Alt}">
+		{block:Label}<span class="person">{Label}</span>{/block:Label}
+		<span class="person-said">{Line}</span>
+	</li>
+	{/block:Lines}
+</ul>
+{/block:Chat}
